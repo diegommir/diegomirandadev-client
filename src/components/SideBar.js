@@ -25,7 +25,7 @@ export default function SideBar() {
             </div>
             <br />
 
-            <h3>Projects</h3>
+            <h3>Projects Portifolio</h3>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
                 &nbsp;<a href="/kaggle/spaceship_titanic">Kaggle - Spaceship Titanic Competition</a>

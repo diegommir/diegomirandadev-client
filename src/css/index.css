@@ -18,20 +18,20 @@ main {
 }
 
 h1 {
-    color: #BC6C25;
+    color: #606C38;
     text-transform: uppercase;
     font-size: xx-large;
     font-weight: 500;
 }
 
 h2 {
-    color: #DDA15E;
+    color: #BC6C25;
     text-transform: uppercase;
     font-size: large;
 }
 
 h3 {
-    color: #DDA15E;
+    color: #BC6C25;
     text-transform: uppercase;
     font-size: smaller;
 }
