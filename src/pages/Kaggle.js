@@ -10,6 +10,9 @@ export default function Kaggle(props) {
     if (competition === 'titanic') {
         url = '/notebook_html/titanic.html'
     }
+    if (competition === 'spaceship_titanic') {
+        url = '/notebook_html/spaceship_titanic.html'
+    }
 
     return (
         <iframe title='competition-page' src={url} />
