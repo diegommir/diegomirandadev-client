@@ -5,6 +5,11 @@ export default function SideBar() {
     return (
         <div id="sidebar" className="d-flex flex-column text-light">
             <a href="/"><img id="profile-img" src={profileImg} alt="Profile"></img></a>
+            <div className="sidebar-item">
+                <i className="bi bi-person-square"></i>
+                &nbsp;<a href="/">Profile</a>
+            </div>
+            <br />
 
             <h3>Contact</h3>
             <div className="sidebar-item">
@@ -13,7 +18,7 @@ export default function SideBar() {
             </div>
             <div className="sidebar-item">
                 <i className="bi bi-phone"></i>
-                &nbsp;<a href="phoneto:+55 62 98474-9074">+55 62 98474-9074</a>
+                &nbsp;<a href="phoneto:+61 402 842 392">+61 402 842 392</a>
             </div>
             <div className="sidebar-item">
                 <i className="bi bi-linkedin"></i>
@@ -25,11 +30,7 @@ export default function SideBar() {
             </div>
             <br />
 
-            <h3>Projects Portifolio</h3>
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<a href="/kaggle/spaceship_titanic">Kaggle - Spaceship Titanic Competition</a>
-            </div>
+            <h3>Portifolio</h3>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
                 &nbsp;<a href="/kaggle/titanic">Kaggle - Titanic Competition</a>
