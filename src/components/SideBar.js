@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../css/SideBar.css'
 import profileImg from '../images/profile.jpeg'
 
@@ -33,7 +34,7 @@ export default function SideBar() {
             <h3>Portifolio</h3>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<a href="/kaggle/titanic">Kaggle - Titanic Competition</a>
+                &nbsp;<Link to="/kaggle/titanic">Kaggle - Titanic Competition</Link>
             </div>
             <br />
         </div>
