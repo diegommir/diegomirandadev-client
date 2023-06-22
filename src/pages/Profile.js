@@ -5,18 +5,18 @@ export default function Profile() {
         <div id="profile">
             <h1>Diego Miranda</h1>
             <hr />
-            <h2>System Analyst</h2>
+            <h2>Software Engineer</h2>
             <h3>Personal Statement</h3>
             <p>
-                I am a systems engineer with more than 15 years of experience, who have been working in all 
-                sorts of projects and teams, most of the time in software engineering and data analytics roles. 
+                I am a software engineer with more than 15 years of experience, who have been working in all 
+                sorts of projects and teams, most of the time in software development and data analytics roles. 
                 I am a fast learner and always eager to grow. I do have plenty experience with techs like Python, 
                 JavaScript, Java, SQL, VBA/Excel and others.
             </p>
             <br />
 
             <h2>Work Experience</h2>
-            <h3>Systems Engineer</h3>
+            <h3>System Analyst</h3>
             <h4>Estado de Goiás &mdash; Nov 2010 - Present</h4>
             <ul>
                 <li>
@@ -69,7 +69,7 @@ export default function Profile() {
             <h3>USP/Esalq &mdash; Escola Superior de Agricultura Luiz de Queiroz</h3>
             <h4>MBA Data Science and Analytics &mdash; Sep 2021 - Jul 2023</h4>
             <p>
-                A professional Master's degree, with major in Machine Learning. Conducted a project 
+                A professional Master's degree, with a major in Machine Learning. Conducted a project 
                 to train a Convolutional Neural Network to identify and classify cancerous breast 
                 lesions on mammographic images.
             </p>
@@ -78,7 +78,7 @@ export default function Profile() {
             <h3>Centro Educacional Alves Faria - ALFA</h3>
             <h4>Bachelor's degree in Computer Information Systems &mdash; 2003 - 2007</h4>
             <p>
-                A Bachelor's degree, with major in Systems Engineering. Conducted a project on a new 
+                A Bachelor's degree, with a major in Information System Engineering. Conducted a project on a new 
                 method to store and index fingerprint data for faster search and comparison.
             </p>
 
