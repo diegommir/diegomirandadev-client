@@ -4,6 +4,7 @@ import SideBar from '../components/SideBar'
 import Profile from './Profile'
 import Kaggle from './Kaggle'
 import NotFound from './NotFound'
+import Covid from './visualization/Covid'
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path='/' element={<Profile />} />
                     <Route path='/profile' element={<Profile />} />
                     <Route path='/kaggle/:competition' element={<Kaggle />} />
+                    <Route path='/visualization/covid' element={<Covid />} />
                     <Route path='*' element={<NotFound />}/>
                 </Routes>
             </main>

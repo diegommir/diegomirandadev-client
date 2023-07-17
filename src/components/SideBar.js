@@ -34,6 +34,10 @@ export default function SideBar() {
             <h3>Portifolio</h3>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/covid">Data Visualization - COVID Evolution</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
                 &nbsp;<Link to="/kaggle/titanic">Kaggle - Titanic Competition</Link>
             </div>
             <br />
