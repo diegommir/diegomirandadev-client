@@ -47,15 +47,26 @@ const Covid = () => {
     return (
         <div id="viz">
             <h2>Deaths by Covid (Monthly)</h2>
-            <label>Country:&nbsp;</label>
-            <select onChange={(e) => setCountryCode(e.target.value)}>
-                <option value="AU">Australia</option>
-                <option value="BR">Brazil</option>
-                <option value="US">United States</option>
-            </select>
+            <p>
+                This is a example of a transition animated chart, developed in Javascript using <a href="https://d3js.org/" target="d3">D3.js</a>. 
+                The code reads the data directly from the CSV file, filters it and then plots the chart.
+            </p>
+            <p>
+                The code for this page can be seen on its <a href="https://github.com/diegommir/diegomirandadev-client/blob/master/src/pages/visualization/Covid.js" target="github-covid">Github Repository.</a>
+            </p>
+            <div>
+                <label className="form-label">Country:&nbsp;</label>
+                <select className="form-control" onChange={(e) => setCountryCode(e.target.value)}>
+                    <option value="AU">Australia</option>
+                    <option value="BR">Brazil</option>
+                    <option value="US">United States</option>
+                </select>
+            </div>
             <br />
 
             <svg width={width} height={height} />
+            <br />
+            <label>Source:&nbsp;</label><a href="https://covid19.who.int/data" target="source">World Health Organization [WHO]</a>
         </div>
     )
 }

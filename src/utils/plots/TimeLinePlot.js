@@ -36,6 +36,7 @@ const TimeLinePlot = () => {
             .join('path')
             .attr('id', 'series-0')
             .datum(marks)
+            .transition()
             .attr('d', line()
                 .x(d => d.x)
                 .y(d => d.y)
@@ -50,7 +51,7 @@ const TimeLinePlot = () => {
             .data([null])
             .join('g')
             .attr('id', 'x-axis')
-            .call(axisBottom(xScale))
+            .call(axisBottom(xScale).tickSize(-height))
             .attr('transform', `translate(0, ${height - margin.bottom})`)
 
         //Add Y axis
@@ -58,9 +59,20 @@ const TimeLinePlot = () => {
             .selectAll('#y-axis')
             .data([null])
             .join('g')
+            .transition()
             .attr('id', 'y-axis')
-            .call(axisLeft(yScale))
+            .call(axisLeft(yScale).tickSize(-width))
             .attr('transform', `translate(${margin.left}, 0)`)
+        
+        //Delete domain lines from X and Y
+        selection.selectAll('.domain')
+            .attr('stroke-width', 0)
+        
+        //Create a "dotted" grid
+        selection
+            .selectAll('.tick line')
+            .attr('stroke-dasharray', '5,5')
+            .attr('opacity', .08)
     }
 
     main.width = value => {
