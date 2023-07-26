@@ -20,7 +20,9 @@ const Covid = () => {
 
     useEffect(() => {
         csv(csvFile, row => {
+            //Parsing to datetime
             row.Date_reported = timeParse('%Y-%m-%d')(row.Date_reported)
+            //Parsing to number
             row.New_cases = +row.New_cases
             row.New_deaths = +row.New_deaths
             return row
@@ -55,8 +57,8 @@ const Covid = () => {
                 The code for this page can be seen on its <a href="https://github.com/diegommir/diegomirandadev-client/blob/master/src/pages/visualization/Covid.js" target="github-covid">Github Repository.</a>
             </p>
             <div>
-                <label className="form-label">Country:&nbsp;</label>
-                <select className="form-control" onChange={(e) => setCountryCode(e.target.value)}>
+                <label className="form-label" htmlFor="selCountry">Country:&nbsp;</label>
+                <select id="selCountry" className="form-control" onChange={(e) => setCountryCode(e.target.value)}>
                     <option value="AU">Australia</option>
                     <option value="BR">Brazil</option>
                     <option value="US">United States</option>
@@ -66,7 +68,7 @@ const Covid = () => {
 
             <svg width={width} height={height} />
             <br />
-            <label>Source:&nbsp;</label><a href="https://covid19.who.int/data" target="source">World Health Organization [WHO]</a>
+            <span>Source:&nbsp;</span><a href="https://covid19.who.int/data" target="source">World Health Organization [WHO]</a>
         </div>
     )
 }
