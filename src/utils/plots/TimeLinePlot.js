@@ -9,6 +9,10 @@ const TimeLinePlot = () => {
     let data
     let xValue
     let yValue
+    let seriesColumn //Defines the column that represents the different categories of series
+    let categories
+
+    const palette = ['#023e8a', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8', '#caf0f8']
 
     /**
      * @param {Selection} selection 
@@ -21,30 +25,42 @@ const TimeLinePlot = () => {
         const yScale = scaleLinear()
             .domain(extent(data, yValue))
             .range([height - margin.bottom, margin.top])
-        
-        const marks = data.map(d => {
-            return ({
-                x: xScale(xValue(d)),
-                y: yScale(yValue(d))
+
+        //If series column is not set, then create only one category
+        if (!seriesColumn)
+            categories = ['unique']
+
+        //Create a series for each category
+        categories.forEach((category, i) => {
+            let filteredData = data
+            //If it has more than one category....
+            if (seriesColumn)
+                filteredData = filteredData.filter(d => d[seriesColumn] === category)
+
+            const marks = filteredData.map(d => {
+                return ({
+                    x: xScale(xValue(d)),
+                    y: yScale(yValue(d))
+                })
             })
+            
+            //Add series
+            selection
+                .selectAll(`#series-${i}`)
+                .data([null])
+                .join('path')
+                .attr('id', `series-${i}`)
+                .datum(marks)
+                .transition()
+                .attr('d', line()
+                    .x(d => d.x)
+                    .y(d => d.y)
+                )
+                .attr("fill", "none")
+                .attr("stroke", palette[i])
+                .attr("stroke-width", 1.5)
         })
-        
-        //Add series
-        selection
-            .selectAll('#series-0')
-            .data([null])
-            .join('path')
-            .attr('id', 'series-0')
-            .datum(marks)
-            .transition()
-            .attr('d', line()
-                .x(d => d.x)
-                .y(d => d.y)
-            )
-            .attr("fill", "none")
-            .attr("stroke", "steelblue")
-            .attr("stroke-width", 1.5)
-        
+
         //Add X axis
         selection
             .selectAll('#x-axis')
@@ -102,6 +118,18 @@ const TimeLinePlot = () => {
 
     main.yValue = value => {
         yValue = value
+        return main
+    }
+
+    main.seriesColumn = value => {
+        seriesColumn = value
+
+        //Get the unique categories from the data
+        const cat = new Set()
+        data.map(d => cat.add(d[seriesColumn]))
+
+        categories = Array.from(cat)
+
         return main
     }
 

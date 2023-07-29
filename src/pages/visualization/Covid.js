@@ -49,6 +49,7 @@ const Covid = () => {
     return (
         <div id="viz">
             <h2>Deaths by Covid (Monthly)</h2>
+            <h3>Dynamic Javascript Line Chart Example</h3>
             <p>
                 This is a example of a transition animated chart, developed in Javascript using <a href="https://d3js.org/" target="d3">D3.js</a>. 
                 The code reads the data directly from the CSV file, filters it and then plots the chart.
