@@ -19,7 +19,7 @@ const DashboardExcel = () => {
             </p>
             <p>
                 Sub-Saharan Africa and Europe are the most important regions for the company. 
-                They alone represent 51.90% from the total profit and 51.91% from the total revenue in 2023. 
+                They alone represented 51.90% from the total profit and 51.91% from the total revenue in 2023. 
                 This pattern still observed during the year of 2024.
             </p>
             <p>
