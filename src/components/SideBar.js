@@ -12,6 +12,27 @@ export default function SideBar() {
             </div>
             <br />
 
+            <h3>Portifolio</h3>
+            {/* 
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/dashboard">Data Visualization - Real-time Dashboard Example</Link>
+            </div>
+            */}
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/dashboard-excel">Data Visualization - Responsive Dashboard using Microsoft Excel</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/covid">Data Visualization - Deaths by COVID</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/kaggle/titanic">Kaggle - Titanic Competition</Link>
+            </div>
+            <br />
+
             <h3>Contact</h3>
             <div className="sidebar-item">
                 <i className="bi bi-envelope"></i>
@@ -28,17 +49,6 @@ export default function SideBar() {
             <div className="sidebar-item">
                 <i className="bi bi-github"></i>
                 &nbsp;<a href="https://github.com/diegommir/" target="github">github.com/diegommir</a>
-            </div>
-            <br />
-
-            <h3>Portifolio</h3>
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/covid">Data Visualization - Deaths by COVID</Link>
-            </div>
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/kaggle/titanic">Kaggle - Titanic Competition</Link>
             </div>
             <br />
         </div>
