@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.149763b6.css",
-    "main.js": "/static/js/main.87df9602.js",
+    "main.js": "/static/js/main.59cf8459.js",
     "static/js/787.df427ef2.chunk.js": "/static/js/787.df427ef2.chunk.js",
     "static/media/covid.csv": "/static/media/covid.09261d8d2a2599f636dc.csv",
     "static/media/Sales 5kk Analysis.png": "/static/media/Sales 5kk Analysis.b00e153f60fbe869fd73.png",
     "static/media/profile.jpeg": "/static/media/profile.4358dcb729eebc51742e.jpeg",
     "index.html": "/index.html",
     "main.149763b6.css.map": "/static/css/main.149763b6.css.map",
-    "main.87df9602.js.map": "/static/js/main.87df9602.js.map",
+    "main.59cf8459.js.map": "/static/js/main.59cf8459.js.map",
     "787.df427ef2.chunk.js.map": "/static/js/787.df427ef2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.149763b6.css",
-    "static/js/main.87df9602.js"
+    "static/js/main.59cf8459.js"
   ]
 }
