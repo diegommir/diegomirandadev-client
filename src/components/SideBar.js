@@ -6,34 +6,16 @@ export default function SideBar() {
     return (
         <div id="sidebar" className="d-flex flex-column text-light">
             <a href="/"><img id="profile-img" src={profileImg} alt="Profile"></img></a>
+
+            <h3>Diego Miranda</h3>
+            <p className="sidebar-item">
+                Data Analyst
+            </p>
+
             <div className="sidebar-item">
                 <i className="bi bi-person-square"></i>
-                &nbsp;<a href="/">Profile</a>
+                &nbsp;<a href="/">Resume</a>
             </div>
-            <br />
-
-            <h3>Portifolio</h3>
-            {/* 
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/dashboard">Data Visualization - Real-time Dashboard Example</Link>
-            </div>
-            */}
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/dashboard-excel">Data Visualization - Responsive Dashboard using Microsoft Excel</Link>
-            </div>
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/covid">Data Visualization - Deaths by COVID</Link>
-            </div>
-            <div className="sidebar-item">
-                <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/kaggle/titanic">Kaggle - Titanic Competition</Link>
-            </div>
-            <br />
-
-            <h3>Contact</h3>
             <div className="sidebar-item">
                 <i className="bi bi-envelope"></i>
                 &nbsp;<a href="mailto:diegommir@gmail.com">diegommir@gmail.com</a>
@@ -49,6 +31,31 @@ export default function SideBar() {
             <div className="sidebar-item">
                 <i className="bi bi-github"></i>
                 &nbsp;<a href="https://github.com/diegommir/" target="github">github.com/diegommir</a>
+            </div>
+            <br />
+
+            <h3>Portifolio</h3>
+            {/* 
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/dashboard">Data Visualization - Real-time Dashboard Example</Link>
+            </div>
+            */}
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/jupyter/bellabeat-case-study">Bellabeat Case Study</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/dashboard-excel">Responsive Dashboard with Excel</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/jupyter/titanic">Titanic Competition</Link>
+            </div>
+            <div className="sidebar-item">
+                <i className="bi bi-file-bar-graph"></i>
+                &nbsp;<Link to="/visualization/covid">D3.js Example - Deaths by COVID</Link>
             </div>
             <br />
         </div>

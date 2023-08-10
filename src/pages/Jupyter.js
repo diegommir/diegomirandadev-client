@@ -1,17 +1,17 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-import '../css/Kaggle.css'
+import '../css/Jupyter.css'
 
-export default function Kaggle(props) {
+export default function Jupyter(props) {
     const { competition } = useParams()
     
     let url = ''
     if (competition === 'titanic') {
         url = '/notebook_html/titanic.html'
     }
-    if (competition === 'spaceship_titanic') {
-        url = '/notebook_html/spaceship_titanic.html'
+    if (competition === 'bellabeat-case-study') {
+        url = '/notebook_html/bellabeat_case_study.html'
     }
 
     return (
