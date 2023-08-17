@@ -6,6 +6,7 @@ import Jupyter from './Jupyter'
 import NotFound from './NotFound'
 import Covid from './visualization/Covid'
 import DashboardExcel from './visualization/DashboardExcel'
+import GoogleFiber from './visualization/GoogleFiber'
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
                     <Route path='/' element={<Profile />} />
                     <Route path='/profile' element={<Profile />} />
                     <Route path='/jupyter/:notebook_name' element={<Jupyter />} />
-                    <Route path='/portifolio/google-fiber-case-study' element={<Covid />} />
+                    <Route path='/portifolio/google-fiber-case-study' element={<GoogleFiber />} />
                     <Route path='/portifolio/dashboard-excel' element={<DashboardExcel />} />
                     <Route path='/portifolio/covid' element={<Covid />} />
                     <Route path='*' element={<NotFound />}/>
