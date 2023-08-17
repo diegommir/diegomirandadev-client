@@ -1,8 +1,7 @@
-import '../css/Profile.css'
 
 export default function Profile() {
     return (
-        <div id="profile">
+        <div id="content">
             <h1>Diego Miranda</h1>
             <hr />
             <h2>Data Analyst</h2>

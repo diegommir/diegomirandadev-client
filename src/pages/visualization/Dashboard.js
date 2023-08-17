@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { select } from 'd3'
 import TimeLinePlot from '../../utils/plots/TimeLinePlot'
-import '../../css/visualization.css'
 
 const Dashboard = () => {
     const [data, setData] = useState()
@@ -51,8 +50,8 @@ const Dashboard = () => {
     }
 
     return (
-        <div id="viz">
-            <h2>Real-Time Dashboard Example</h2>
+        <div id="content">
+            <h1>Real-Time Dashboard Example</h1>
             <p>
                 This is a work in progress....
             </p>

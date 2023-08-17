@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { select, csv, timeParse } from "d3"
 import TimeLinePlot from "../../utils/plots/TimeLinePlot"
 import csvFile from '../../data/covid.csv'
-import '../../css/visualization.css'
 
 const Covid = () => {
     const [data, setData] = useState()
@@ -47,9 +46,9 @@ const Covid = () => {
     }
     
     return (
-        <div id="viz">
-            <h2>Deaths by Covid (Monthly)</h2>
-            <h3>Dynamic Javascript Line Chart Example</h3>
+        <div id="content">
+            <h1>Deaths by Covid (Monthly)</h1>
+            <h2>Dynamic Javascript Line Chart Example</h2>
             <p>
                 This is a example of a transition animated chart, developed in Javascript using <a href="https://d3js.org/" target="d3">D3.js</a>. 
                 The code reads the data directly from the CSV file, filters it and then plots the chart.

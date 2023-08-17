@@ -1,11 +1,10 @@
-import '../../css/visualization.css'
 import dashboardImage from '../../images/Sales 5kk Analysis.png'
 
 const DashboardExcel = () => {
     return (
-        <div id="viz">
-            <h2>Responsive Sales Dashboard</h2>
-            <h4>Responsive Sales Dashboard With Microsoft Excel</h4>
+        <div id="content">
+            <h1>Responsive Sales Dashboard</h1>
+            <h2>Responsive Sales Dashboard With Microsoft Excel</h2>
             <p>
                 This is a screenshot of a dynamic dashboard built entirely in Microsoft Excel. 
                 The data source is a mock of a sales dataset, has 5 million observations, 
