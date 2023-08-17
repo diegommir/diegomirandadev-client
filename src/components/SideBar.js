@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import '../css/SideBar.css'
 import profileImg from '../images/profile.jpeg'
 
 export default function SideBar() {
@@ -35,19 +34,17 @@ export default function SideBar() {
             <br />
 
             <h3>Portifolio</h3>
-            {/* 
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/dashboard">Data Visualization - Real-time Dashboard Example</Link>
+                &nbsp;<Link to="/portifolio/google-fiber-case-study">Google Fiber Case Study</Link>
             </div>
-            */}
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
                 &nbsp;<Link to="/jupyter/bellabeat-case-study">Bellabeat Case Study</Link>
             </div>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/dashboard-excel">Responsive Dashboard with Excel</Link>
+                &nbsp;<Link to="/portifolio/dashboard-excel">Responsive Dashboard with Excel</Link>
             </div>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
@@ -55,7 +52,7 @@ export default function SideBar() {
             </div>
             <div className="sidebar-item">
                 <i className="bi bi-file-bar-graph"></i>
-                &nbsp;<Link to="/visualization/covid">D3.js Example - Deaths by COVID</Link>
+                &nbsp;<Link to="/portifolio/covid">D3.js Example - Deaths by COVID</Link>
             </div>
             <br />
         </div>

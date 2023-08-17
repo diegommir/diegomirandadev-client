@@ -4,17 +4,17 @@ import { useParams } from 'react-router-dom'
 import '../css/Jupyter.css'
 
 export default function Jupyter(props) {
-    const { competition } = useParams()
+    const { notebook_name } = useParams()
     
     let url = ''
-    if (competition === 'titanic') {
+    if (notebook_name === 'titanic') {
         url = '/notebook_html/titanic.html'
     }
-    if (competition === 'bellabeat-case-study') {
+    if (notebook_name === 'bellabeat-case-study') {
         url = '/notebook_html/bellabeat_case_study.html'
     }
 
     return (
-        <iframe title='competition-page' src={url} />
+        <iframe title='notebook-page' src={url} />
     )
 }

@@ -16,9 +16,10 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Profile />} />
                     <Route path='/profile' element={<Profile />} />
-                    <Route path='/jupyter/:competition' element={<Jupyter />} />
-                    <Route path='/visualization/covid' element={<Covid />} />
-                    <Route path='/visualization/dashboard-excel' element={<DashboardExcel />} />
+                    <Route path='/jupyter/:notebook_name' element={<Jupyter />} />
+                    <Route path='/portifolio/google-fiber-case-study' element={<Covid />} />
+                    <Route path='/portifolio/dashboard-excel' element={<DashboardExcel />} />
+                    <Route path='/portifolio/covid' element={<Covid />} />
                     <Route path='*' element={<NotFound />}/>
                 </Routes>
             </main>
