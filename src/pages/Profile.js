@@ -3,9 +3,10 @@ export default function Profile() {
     return (
         <div id="content">
             <h1>Diego Miranda</h1>
-            <hr />
             <h2>Data Analyst</h2>
-            <h3>Personal Statement</h3>
+            <hr />
+            <br />
+            <h2>Personal Statement</h2>
             <p>
                 Talented Data Analyst with experience analysing and identifying trends and patterns in data.
                 Solid knowledge of data manipulation and data cleaning with tools like SQL, Excel, and Python, 
@@ -16,21 +17,32 @@ export default function Profile() {
                 within data. Bilingual in English and Portuguese.
             </p>
 
-            <h2>Education</h2>
+            <h2>Education and Certifications</h2>
+
+            <h3>Advanced Data Analytics Professional Certificate</h3>
+            <h4>Google Career Certificates &mdash; Ongoing</h4>
+            <p />
+
+            <h3>Business Intelligence Professional Certificate</h3>
+            <h4>
+                Google Career Certificates &mdash; Aug 2023 &nbsp;
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/Q89PF3FYNZ7A" target="certificate">Show Certificate</a>
+            </h4>
+            <p />
+
+            <h3>Data Analytics Professional Certificate</h3>
+            <h4>
+                Google Career Certificates &mdash; Aug 2023 &nbsp;
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/A5AH5DFBYBLJ" target="certificate">Show Certificate</a>
+            </h4>
+            <p />
+
             <h3>MBA Data Science and Analytics</h3>
             <h4>USP/Esalq &mdash; University of São Paulo &mdash; Sep 2021 - Jul 2023</h4>
             <p>
                 A professional Master's degree, with a major in Machine Learning. Conducted a project 
                 to train a Convolutional Neural Network to identify and classify cancerous breast 
                 lesions on mammographic images.
-            </p>
-
-            <h3>Data Analytics Professional Certificate</h3>
-            <h4>Google Career Certificates &mdash; Jun 2023 - Aug 2023</h4>
-            <p>
-                Extensive Google Career training with hands-on experience with data cleaning, data visualization, 
-                project management, interpreting and communicating data analytics findings. Confidence in transforming
-                complex data into actionable and clear insights.
             </p>
 
             <h3>Bachelor's degree in Computer Information Systems</h3>
